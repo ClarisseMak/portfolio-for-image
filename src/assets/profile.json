@@ -1,0 +1,31 @@
+{
+  "name": "Ashetella",
+  "nameEn": "Ashetella",
+  "major": "HVAC",
+  "school": "TJU",
+  "photo": "https://album.biliimg.com/bfs/new_dyn/448c8491daaf134389cd3744bb91f43522113127.jpg",
+  "aboutMe": "Hello! I am an undergraduate student majoring in HVAC (Heating, Ventilation, and Air Conditioning) at TJU (Tongji University). I am passionate about building energy efficiency, indoor environmental quality, and sustainable engineering solutions.\n\nThrough my studies, I have gained a solid foundation in thermodynamics, fluid mechanics, and system design. I enjoy applying theoretical knowledge to practical projects, such as optimizing HVAC systems for comfort and energy savings.\n\nI am eager to explore innovative technologies in the field and contribute to creating healthier, more sustainable indoor environments.",
+  "social": [
+    {
+      "name": "Bilibili",
+      "icon": "📺",
+      "url": "https://space.bilibili.com/22113127"
+    },
+    {
+      "name": "Instagram",
+      "icon": "📷",
+      "url": "https://instagram.com/yourusername"
+    },
+    {
+      "name": "Email",
+      "icon": "✉️",
+      "url": "mailto:example@email.com"
+    },
+    {
+      "name": "X.com",
+      "icon": "X",
+      "url": "https://x.com/yourusername"
+    }
+  ]
+}
+
