@@ -15,12 +15,17 @@
     </div>
     <div class="card-content">
       <h3 class="card-title">{{ project.title }}</h3>
-      <p class="card-description">{{ project.description }}</p>
+      <div
+        class="card-description"
+        v-html="parseMarkdown(project.description)"
+      ></div>
     </div>
   </router-link>
 </template>
 
 <script setup>
+import { parse } from "marked";
+
 const props = defineProps({
   project: {
     type: Object,
@@ -30,6 +35,19 @@ const props = defineProps({
 
 const handleImageError = (event) => {
   console.warn("Image loading failed:", event.target.src);
+};
+
+// Parse markdown content
+const parseMarkdown = (content) => {
+  if (!content) {
+    return "";
+  }
+  try {
+    return parse(content);
+  } catch (error) {
+    console.error("Error parsing markdown:", error);
+    return content;
+  }
 };
 </script>
 
@@ -116,8 +134,66 @@ const handleImageError = (event) => {
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Markdown content styles for card descriptions */
+.card-description :deep(p) {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-description :deep(strong) {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.card-description :deep(em) {
+  font-style: italic;
+}
+
+.card-description :deep(a) {
+  color: #667eea;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.card-description :deep(a:hover) {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
+.card-description :deep(ul),
+.card-description :deep(ol) {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.card-description :deep(li) {
+  margin: 0.25em 0;
+}
+
+.card-description :deep(code) {
+  background: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.card-description :deep(blockquote) {
+  border-left: 3px solid #667eea;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #666;
+  font-style: italic;
 }
 
 @media (max-width: 640px) {

@@ -28,11 +28,11 @@
           />
         </div>
         <div class="header-info">
-          <span v-if="project.category" class="category-badge">{{
-            project.category
-          }}</span>
+          <span v-if="project.category" class="category-badge"
+            >—— {{ project.category }} ——</span
+          >
           <h1 class="project-title">{{ project.title }}</h1>
-          <p class="project-description">{{ project.description }}</p>
+          <div class="project-description" v-html="parsedDescription"></div>
         </div>
       </div>
 
@@ -42,12 +42,23 @@
         <ProjectItem :project="project" />
       </div>
     </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+      <button @click="scrollToTop" class="float-btn" title="返回顶部">
+        <span class="float-icon">↑</span>
+      </button>
+      <router-link to="/" class="float-btn" title="返回首页">
+        <span class="float-icon">🏠</span>
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import { parse } from "marked";
 import ProjectItem from "../components/ProjectItem.vue";
 import projectsData from "../assets/projects/example.json";
 
@@ -62,10 +73,31 @@ const project = computed(() => {
   return projects.value.find((p) => p.id === id);
 });
 
+// Parse markdown description
+const parsedDescription = computed(() => {
+  if (!project.value || !project.value.description) {
+    return "";
+  }
+  try {
+    return parse(project.value.description);
+  } catch (error) {
+    console.error("Error parsing markdown:", error);
+    return project.value.description;
+  }
+});
+
 // Scroll to top when component mounts
 onMounted(() => {
   window.scrollTo(0, 0);
 });
+
+// Scroll to top function
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 </script>
 
 <style scoped>
@@ -174,13 +206,14 @@ onMounted(() => {
 
 .category-badge {
   display: inline-block;
-  padding: 0.5rem 1rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .project-title {
@@ -196,6 +229,58 @@ onMounted(() => {
   color: #555;
   line-height: 1.7;
   margin: 0;
+}
+
+/* Markdown content styles */
+.project-description :deep(p) {
+  margin: 0.5em 0;
+}
+
+.project-description :deep(strong) {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.project-description :deep(em) {
+  font-style: italic;
+}
+
+.project-description :deep(a) {
+  color: #667eea;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.project-description :deep(a:hover) {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
+.project-description :deep(ul),
+.project-description :deep(ol) {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.project-description :deep(li) {
+  margin: 0.25em 0;
+}
+
+.project-description :deep(code) {
+  background: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.project-description :deep(blockquote) {
+  border-left: 3px solid #667eea;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #666;
+  font-style: italic;
 }
 
 .project-main {
@@ -246,5 +331,58 @@ onMounted(() => {
   .section-title {
     font-size: 1.5rem;
   }
+
+  .floating-buttons {
+    right: 1rem;
+    gap: 0.75rem;
+  }
+
+  .float-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .float-icon {
+    font-size: 1.25rem;
+  }
+}
+
+/* Floating Action Buttons */
+.floating-buttons {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.float-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.float-btn:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.float-icon {
+  font-size: 1.5rem;
+  line-height: 1;
 }
 </style>

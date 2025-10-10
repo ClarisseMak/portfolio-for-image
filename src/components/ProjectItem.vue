@@ -1,34 +1,65 @@
 <template>
   <div class="project-item">
     <div class="project-main">
-      <div v-for="(item, index) in project.main" :key="index" class="main-item">
-        <div class="image-container" @click="openLightbox(item.image)">
-          <img
-            :src="item.image"
-            :alt="item.title"
-            class="main-image"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            crossorigin="anonymous"
-            @error="handleImageError"
-          />
-          <div class="image-overlay">
-            <span class="zoom-icon">🔍</span>
+      <div
+        v-for="(item, index) in project.main"
+        :key="index"
+        class="main-item"
+        :class="{ 'no-image': !item.image }"
+      >
+        <!-- 有图片的情况 -->
+        <template v-if="item.image">
+          <div class="image-container" @click="openLightbox(item.image)">
+            <img
+              :src="item.image"
+              :alt="item.title"
+              class="main-image"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              crossorigin="anonymous"
+              @error="handleImageError"
+            />
+            <div class="image-overlay">
+              <span class="zoom-icon">🔍</span>
+            </div>
           </div>
-        </div>
-        <div class="content">
-          <h3 class="item-title">{{ item.title }}</h3>
-          <p class="item-description">{{ item.description }}</p>
-          <a
-            v-if="item.link"
-            :href="item.link"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="item-link"
-          >
-            查看原文 →
-          </a>
-        </div>
+          <div class="content">
+            <h3 class="item-title">{{ item.title }}</h3>
+            <div
+              class="item-description"
+              v-html="parseDescription(item.description)"
+            ></div>
+            <a
+              v-if="item.link"
+              :href="item.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="item-link"
+            >
+              查看原文 →
+            </a>
+          </div>
+        </template>
+
+        <!-- 没有图片的情况 -->
+        <template v-else>
+          <div class="no-image-content">
+            <h3 class="item-title">{{ item.title }}</h3>
+            <div
+              class="item-description"
+              v-html="parseDescription(item.description)"
+            ></div>
+            <a
+              v-if="item.link"
+              :href="item.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="item-link"
+            >
+              查看原文 →
+            </a>
+          </div>
+        </template>
       </div>
     </div>
 
@@ -58,7 +89,8 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { parse } from "marked";
 
 const props = defineProps({
   project: {
@@ -84,6 +116,19 @@ const handleImageError = (event) => {
   // 可以设置一个默认占位图
   // event.target.src = '/placeholder.jpg'
 };
+
+// Parse markdown description
+const parseDescription = (description) => {
+  if (!description) {
+    return "";
+  }
+  try {
+    return parse(description);
+  } catch (error) {
+    console.error("Error parsing markdown:", error);
+    return description;
+  }
+};
 </script>
 
 <style scoped>
@@ -107,6 +152,11 @@ const handleImageError = (event) => {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 没有图片时的单列布局 */
+.main-item.no-image {
+  grid-template-columns: 1fr;
 }
 
 .main-item:hover {
@@ -191,6 +241,58 @@ const handleImageError = (event) => {
   flex-grow: 1;
 }
 
+/* Markdown content styles for item descriptions */
+.item-description :deep(p) {
+  margin: 0.5em 0;
+}
+
+.item-description :deep(strong) {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.item-description :deep(em) {
+  font-style: italic;
+}
+
+.item-description :deep(a) {
+  color: #667eea;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.item-description :deep(a:hover) {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
+.item-description :deep(ul),
+.item-description :deep(ol) {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.item-description :deep(li) {
+  margin: 0.25em 0;
+}
+
+.item-description :deep(code) {
+  background: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.item-description :deep(blockquote) {
+  border-left: 3px solid #667eea;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #666;
+  font-style: italic;
+}
+
 .item-link {
   display: inline-flex;
   align-items: center;
@@ -204,6 +306,32 @@ const handleImageError = (event) => {
 
 .item-link:hover {
   color: #349469;
+}
+
+/* 没有图片时的内容样式 */
+.no-image-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.no-image-content .item-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.no-image-content .item-description {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.no-image-content .item-link {
+  align-self: flex-start;
 }
 
 /* 灯箱样式 */
@@ -306,6 +434,21 @@ const handleImageError = (event) => {
 
   .item-description {
     font-size: 0.9rem;
+  }
+
+  /* 没有图片时的移动端样式 */
+  .no-image-content {
+    padding: 1.5rem;
+  }
+
+  .no-image-content .item-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .no-image-content .item-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
 
   .close-button {

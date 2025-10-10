@@ -21,13 +21,12 @@
         <p class="education">{{ profile.school }} · {{ profile.major }}</p>
         <div class="about-text">
           <h2 class="about-title">ABOUT ME</h2>
-          <p
+          <div
             v-for="(paragraph, index) in aboutParagraphs"
             :key="index"
             class="about-paragraph"
-          >
-            {{ paragraph }}
-          </p>
+            v-html="parseMarkdown(paragraph)"
+          ></div>
         </div>
 
         <!-- 社交媒体 -->
@@ -57,6 +56,7 @@
 
 <script setup>
 import { computed } from "vue";
+import { parse } from "marked";
 
 const props = defineProps({
   profile: {
@@ -71,6 +71,19 @@ const aboutParagraphs = computed(() => {
     ? props.profile.aboutMe.split("\n\n").filter((p) => p.trim())
     : [];
 });
+
+// Parse markdown content
+const parseMarkdown = (content) => {
+  if (!content) {
+    return "";
+  }
+  try {
+    return parse(content);
+  } catch (error) {
+    console.error("Error parsing markdown:", error);
+    return content;
+  }
+};
 </script>
 
 <style scoped>
@@ -184,6 +197,58 @@ const aboutParagraphs = computed(() => {
 
 .about-paragraph:last-child {
   margin-bottom: 0;
+}
+
+/* Markdown content styles for about paragraphs */
+.about-paragraph :deep(p) {
+  margin: 0.5em 0;
+}
+
+.about-paragraph :deep(strong) {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.about-paragraph :deep(em) {
+  font-style: italic;
+}
+
+.about-paragraph :deep(a) {
+  color: #667eea;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.about-paragraph :deep(a:hover) {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
+.about-paragraph :deep(ul),
+.about-paragraph :deep(ol) {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.about-paragraph :deep(li) {
+  margin: 0.25em 0;
+}
+
+.about-paragraph :deep(code) {
+  background: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.about-paragraph :deep(blockquote) {
+  border-left: 3px solid #667eea;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #666;
+  font-style: italic;
 }
 
 /* 社交媒体 */
