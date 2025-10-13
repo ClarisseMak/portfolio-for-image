@@ -10,6 +10,11 @@
       "name": "Email",
       "icon": "✉️",
       "url": "mailto:bluroot013@outlook.com"
+    },
+    {
+      "name": "GitHub",
+      "icon": "💻",
+      "url": "https://github.com/ClarisseMak"
     }
   ]
 }

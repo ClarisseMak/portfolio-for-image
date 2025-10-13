@@ -74,23 +74,23 @@
     {
       "id": 2,
       "category": "💼 Commercial Projects",
-      "title": "Ashetella's something interesting 2",
+      "title": "BYHEALTH Products' Main Images",
       "titleImage": "https://i0.hdslb.com/bfs/new_dyn/de00ba7b1f107c64b07ae415a710c21a3537123900655873.png@1192w.avif",
-      "description": "Ashetella's something interesting description",
+      "description": "Layout design works for the main images of the products on the Australian BYHEALTH website.",
       "main": [
         {
           "title": "13diff",
-          "description": "When I have 3 dora Fives, danger of 13diff is approching",
+          "description": "When I have 3 dora Fives, danger of 13diff is approching\n\n**Click the image to zoom in.**",
           "image": "http://i0.hdslb.com/bfs/new_dyn/568c13edcb98a767148ad41f2eec13db22113127.jpg"
         },
         {
           "title": "Chopsticks",
-          "description": "Turning forks and knives upside down, I let them become chopsticks—bridging cultures with a gentle twist, savoring the poetry in every improvised bite.",
+          "description": "Turning forks and knives upside down, I let them become chopsticks—bridging cultures with a gentle twist, savoring the poetry in every improvised bite.\n\n**Click the image to zoom in.**",
           "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg"
         },
         {
           "title": "Preparation for French Braised Chicken Leg",
-          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.",
+          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.\n\n**Click the image to zoom in.**",
           "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg"
         },
         {
@@ -101,26 +101,109 @@
       ]
     },
     {
-      "id": 3,
+      "id": 6,
       "category": "💼 Commercial Projects",
-      "title": "Ashetella's something interesting 4",
-      "titleImage": "http://i0.hdslb.com/bfs/new_dyn/c686494c438a19f5b29d36963c1367b022113127.jpg",
-      "description": "Ashetella's something interesting description",
+      "title": "BYHEALTH Website Layout Diagrams & Interactions",
+      "titleImage": "https://i0.hdslb.com/bfs/new_dyn/de00ba7b1f107c64b07ae415a710c21a3537123900655873.png@1192w.avif",
+      "description": "Layout design works for the details and shopping pages of the products on the Australian BYHEALTH website.\n\nThis project is finished with Adobe Photoshop & Adobe Illustrator, when I was not able to use frontend coding technologies.",
+      "main": [
+        {
+          "title": "Product 1",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/423a31c7a51d86d8072961b39fbe7ba63537123900655873.png@1192w.avif"
+        },
+        {
+          "title": "Product 2",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/bb34d231823394f52e5a6cfbb5241cb73537123900655873.png@1192w.avif"
+        },
+        {
+          "title": "Product 1 on Mobile",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/13ebf3897232aba6a868016d7029736e3537123900655873.png@1192w.avif"
+        },
+        {
+          "title": "Product 2 on Mobile",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/bd538299c5a7f420521f7173d699c3fb3537123900655873.png@1192w.avif"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "💼 Commercial Projects",
+      "title": "BYHEALTH Products' Main Images",
+      "titleImage": "https://i0.hdslb.com/bfs/new_dyn/de00ba7b1f107c64b07ae415a710c21a3537123900655873.png@1192w.avif",
+      "description": "Layout design works for the main images of the products on the Australian BYHEALTH website.",
       "main": [
         {
           "title": "13diff",
-          "description": "When I have 3 dora Fives, danger of 13diff is approching",
+          "description": "When I have 3 dora Fives, danger of 13diff is approching\n\n**Click the image to zoom in.**",
           "image": "http://i0.hdslb.com/bfs/new_dyn/568c13edcb98a767148ad41f2eec13db22113127.jpg"
         },
         {
           "title": "Chopsticks",
-          "description": "Turning forks and knives upside down, I let them become chopsticks—bridging cultures with a gentle twist, savoring the poetry in every improvised bite.",
+          "description": "Turning forks and knives upside down, I let them become chopsticks—bridging cultures with a gentle twist, savoring the poetry in every improvised bite.\n\n**Click the image to zoom in.**",
           "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg"
         },
         {
           "title": "Preparation for French Braised Chicken Leg",
-          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.",
+          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.\n\n**Click the image to zoom in.**",
           "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg"
+        },
+        {
+          "title": "Preparation for French Braised Chicken Leg 1",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "💼 Commercial Projects",
+      "title": "BYHEALTH Australian Website Icons",
+      "titleImage": "https://i0.hdslb.com/bfs/new_dyn/ad2552f59a07f5d1d468a868b2fbf4b93537123900655873.png",
+      "description": "This series of icons are designed with Adobe Illustrator, fot the Australian BYHEALTH website.\n\n The Colour of the icons matches the company's brand guidelines.",
+      "main": [
+        {
+          "title": "Formula Facts",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/1f3d8c44944bc48460c1d28cdf059d393537123900655873.png@1192w_1192h.avif"
+        },
+        {
+          "title": "Ingredients",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/45ec55fba3f0cad3a7a495a9bdd4fd2e3537123900655873.png@1192w_1192h.avif"
+        },
+        {
+          "title": "Suitable for",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/d0a9ed7c36a4e5a00413167c1e5f1aa83537123900655873.png@1192w_1192h.avif"
+        },
+        {
+          "title": "Usage",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/43ec9acfdf0a9571e8df56bf79c097af3537123900655873.png@1192w_1192h.avif"
+        },
+        {
+          "title": "Cart",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/ad2552f59a07f5d1d468a868b2fbf4b93537123900655873.png@1192w_1192h.avif"
+        },
+        {
+          "title": "Login",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/6a08f5dfcb568c7fe91c0766f955b1ab3537123900655873.png@1192w_1192h.avif"
+        },
+        {
+          "title": "Sidebar",
+          "description": "Only on the mobile device\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/235c9c8374fa52d2810779e7f72bda213537123900655873.png@1192w_1192h.avif"
+        },
+        {
+          "title": "Search",
+          "description": "\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/01dd8b8a76f253dc74201eb07eb4555e3537123900655873.png@1192w_1192h.avif"
         }
       ]
     },
@@ -133,12 +216,12 @@
       "main": [
         {
           "title": "Mood Board",
-          "description": "When I have 3 dora Fives, danger of 13diff is approching.\n\n**Click the image to zoom in.**",
+          "description": "Joint the materials\n\n**Click the image to zoom in.**",
           "image": "https://i0.hdslb.com/bfs/new_dyn/1004cd76b65a953a5d43c36d83c635543537123900655873.jpg"
         },
         {
           "title": "Fashioh Trend Board",
-          "description": "When I have 3 dora Fives, danger of 13diff is approching.\n\n**Click the image to zoom in.**",
+          "description": "Obtaining \n\n**Click the image to zoom in.**",
           "image": "https://i0.hdslb.com/bfs/new_dyn/416bcbc52c2ed8ed11323c17c3637fdd3537123900655873.jpg"
         }
       ]
