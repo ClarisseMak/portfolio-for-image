@@ -2,9 +2,9 @@
   "projects": [
     {
       "id": 0,
-      "category": "School Projects",
-      "title": "Ashetella's something interesting",
-      "titleImage": "http://i0.hdslb.com/bfs/new_dyn/c686494c438a19f5b29d36963c1367b022113127.jpg",
+      "category": "test",
+      "title": "Shaping Fluidity",
+      "titleImage": "https://i0.hdslb.com/bfs/new_dyn/e1a0e92898b77f2290144cb162843c733537123900655873.png@1052w_!web-dynamic.avif",
       "description": "# 这是一个Markdown测试\n\n**粗体文本**\n\n_斜体文本_\n\n[这是一个链接](https://example.com)\n\n- 列表项一\n- 列表项二\n- 列表项三\n\n> 这是引用块\n\n`行内代码`\n\n```js\nconsole.log('代码块测试')\n```\n",
       "main": [
         {
@@ -14,79 +14,95 @@
         },
         {
           "title": "Chopsticks",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg",
-          "link": "https://www.bilibili.com/opus/1108357039912910855"
+          "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg"
         },
         {
           "title": "Preparation for French Braised Chicken Leg",
-          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.",
-          "link": "https://www.bilibili.com/opus/1059010666032005158"
+          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking."
         }
       ]
     },
     {
       "id": 1,
-      "category": "Company Projects",
-      "title": "Ashetella's something interesting 2",
-      "titleImage": "http://i0.hdslb.com/bfs/new_dyn/c686494c438a19f5b29d36963c1367b022113127.jpg",
-      "description": "Ashetella's something interesting description",
+      "category": "🏫 School Projects",
+      "title": "Shaping Fluidity",
+      "titleImage": "https://i0.hdslb.com/bfs/new_dyn/e1a0e92898b77f2290144cb162843c733537123900655873.png@1052w_!web-dynamic.avif",
+      "description": "A **_Creative Thinking in Fashion_** course project\n\nThe inspiration of this collection comes from the movement of falling leaves in streaming water, and the fancy texture of the fluid metal.\n\nThese",
       "main": [
         {
-          "title": "13diff",
-          "description": "When I have 3 dora Fives, danger of 13diff is approching",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/568c13edcb98a767148ad41f2eec13db22113127.jpg",
-          "link": "https://www.bilibili.com/opus/1112418524245000199"
+          "title": "Mood Board",
+          "description": "**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/7e438e0bc306d585475696aa4b4971063537123900655873.png@1052w_!web-dynamic.avif"
         },
         {
-          "title": "Chopsticks",
-          "description": "Turning forks and knives upside down, I let them become chopsticks—bridging cultures with a gentle twist, savoring the poetry in every improvised bite.",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg",
-          "link": "https://www.bilibili.com/opus/1108357039912910855"
+          "title": "Theme Pattern",
+          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/e1a0e92898b77f2290144cb162843c733537123900655873.png@1052w_!web-dynamic.avif"
         },
         {
-          "title": "Preparation for French Braised Chicken Leg",
-          "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg",
-          "link": "https://www.bilibili.com/opus/1059010666032005158"
+          "title": "Flat Sketches & Color Palette",
+          "description": "**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/d28bd0e977e429fea091cc8ea73de9353537123900655873.png@1052w_!web-dynamic.avif" 
         },
         {
-          "title": "Preparation for French Braised Chicken Leg 1",
-          "description": "这是一个**粗体文本**和*斜体文本*的示例。\n\n你可以添加[链接](https://example.com)。\n\n- 列表项 1\n- 列表项 2\n- 列表项 3\n\n还可以使用`代码`标记。\n\n> 这是一个引用块",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg",
-          "link": "https://www.bilibili.com/opus/1059010666032005158"
+          "title": "Fashion Illustrations",
+          "description": "**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/fc3d434e115d1e2fc3e4e1604b9442c33537123900655873.jpg@1052w_!web-dynamic.avif"
+        },
+        {
+          "title": "Style 1",
+          "description": "A solid cutting acetate-like fabric one-piece dress.\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/49a69551b1ec7bee73fdb69c634668243537123900655873.png@1052w_!web-dynamic.avif"
+        },
+        {
+          "title": "Style 2",
+          "description": "A solid cutting faux leather coat, and a high-waisted acetate-like fabric long dress. \n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/ab723f90ddf4fb4ab004bca5229c29b43537123900655873.png@1052w_!web-dynamic.avif"
+        },
+        {
+          "title": "Style 3",
+          "description": "A puffed sleeve satin fabric blouse, and an A-line acetate-like fabric dress with metalic painted plastic frame.\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/bde4062b6dd8043dd2d25576d0caa19e3537123900655873.png@1052w_!web-dynamic.avif"
+        },
+        {
+          "title": "Style 4",
+          "description": "A puffed sleeves peralescent fabric tube-top, and a pair of wide-leg cuffed jeans.\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/efee4a15296635f8072f9a43a9a095f13537123900655873.png@1052w_!web-dynamic.avif"
         }
       ]
     },
     {
       "id": 2,
-      "category": "Personal Projects",
-      "title": "Ashetella's something interesting 3",
-      "titleImage": "http://i0.hdslb.com/bfs/new_dyn/c686494c438a19f5b29d36963c1367b022113127.jpg",
+      "category": "💼 Commercial Projects",
+      "title": "Ashetella's something interesting 2",
+      "titleImage": "https://i0.hdslb.com/bfs/new_dyn/de00ba7b1f107c64b07ae415a710c21a3537123900655873.png@1192w.avif",
       "description": "Ashetella's something interesting description",
       "main": [
         {
           "title": "13diff",
           "description": "When I have 3 dora Fives, danger of 13diff is approching",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/568c13edcb98a767148ad41f2eec13db22113127.jpg",
-          "link": "https://www.bilibili.com/opus/1112418524245000199"
+          "image": "http://i0.hdslb.com/bfs/new_dyn/568c13edcb98a767148ad41f2eec13db22113127.jpg"
         },
         {
           "title": "Chopsticks",
           "description": "Turning forks and knives upside down, I let them become chopsticks—bridging cultures with a gentle twist, savoring the poetry in every improvised bite.",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg",
-          "link": "https://www.bilibili.com/opus/1108357039912910855"
+          "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg"
         },
         {
           "title": "Preparation for French Braised Chicken Leg",
           "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg",
-          "link": "https://www.bilibili.com/opus/1059010666032005158"
+          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg"
+        },
+        {
+          "title": "Preparation for French Braised Chicken Leg 1",
+          "description": "这是一个**粗体文本**和*斜体文本*的示例。\n\n你可以添加[链接](https://example.com)。\n\n- 列表项 1\n- 列表项 2\n- 列表项 3\n\n还可以使用`代码`标记。\n\n> 这是一个引用块",
+          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg"
         }
       ]
     },
     {
       "id": 3,
-      "category": "Company Projects",
+      "category": "💼 Commercial Projects",
       "title": "Ashetella's something interesting 4",
       "titleImage": "http://i0.hdslb.com/bfs/new_dyn/c686494c438a19f5b29d36963c1367b022113127.jpg",
       "description": "Ashetella's something interesting description",
@@ -94,20 +110,36 @@
         {
           "title": "13diff",
           "description": "When I have 3 dora Fives, danger of 13diff is approching",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/568c13edcb98a767148ad41f2eec13db22113127.jpg",
-          "link": "https://www.bilibili.com/opus/1112418524245000199"
+          "image": "http://i0.hdslb.com/bfs/new_dyn/568c13edcb98a767148ad41f2eec13db22113127.jpg"
         },
         {
           "title": "Chopsticks",
           "description": "Turning forks and knives upside down, I let them become chopsticks—bridging cultures with a gentle twist, savoring the poetry in every improvised bite.",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg",
-          "link": "https://www.bilibili.com/opus/1108357039912910855"
+          "image": "http://i0.hdslb.com/bfs/new_dyn/1766320cf52724ee819231625c2e059522113127.jpg"
         },
         {
           "title": "Preparation for French Braised Chicken Leg",
           "description": "All the prepared ingredients—chicken legs, vegetables, and herbs—are neatly arranged on the cutting board, ready for cooking.",
-          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg",
-          "link": "https://www.bilibili.com/opus/1059010666032005158"
+          "image": "http://i0.hdslb.com/bfs/new_dyn/881ebf40f935bda992a65dd5d034a5c322113127.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "🏫 School Projects",
+      "title": "Digital Migrants",
+      "titleImage": "https://i0.hdslb.com/bfs/new_dyn/b7fb140cd27d1dbe0c6688ea58751e533537123900655873.jpg@1192w.avif",
+      "description": "A graduation design project\n\nI'm still working on it, please wait for the final version.",
+      "main": [
+        {
+          "title": "Mood Board",
+          "description": "When I have 3 dora Fives, danger of 13diff is approching.\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/1004cd76b65a953a5d43c36d83c635543537123900655873.jpg"
+        },
+        {
+          "title": "Fashioh Trend Board",
+          "description": "When I have 3 dora Fives, danger of 13diff is approching.\n\n**Click the image to zoom in.**",
+          "image": "https://i0.hdslb.com/bfs/new_dyn/416bcbc52c2ed8ed11323c17c3637fdd3537123900655873.jpg"
         }
       ]
     }

@@ -36,7 +36,7 @@
               rel="noopener noreferrer"
               class="item-link"
             >
-              查看原文 →
+              View Original →
             </a>
           </div>
         </template>
@@ -56,7 +56,7 @@
               rel="noopener noreferrer"
               class="item-link"
             >
-              查看原文 →
+              View Original →
             </a>
           </div>
         </template>

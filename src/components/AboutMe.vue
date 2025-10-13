@@ -163,7 +163,7 @@ const parseMarkdown = (content) => {
 }
 
 .divider {
-  width: 60px;
+  width: 100px;
   height: 3px;
   background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
   border-radius: 2px;
