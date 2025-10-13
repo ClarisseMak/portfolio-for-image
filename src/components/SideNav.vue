@@ -30,6 +30,16 @@
           <span class="nav-text">{{ category }}</span>
         </a>
       </li>
+      <li class="nav-item">
+        <a
+          href="#footer"
+          class="nav-link"
+          @click="scrollToSection('footer', $event)"
+        >
+          <span class="nav-dot"></span>
+          <span class="nav-text">Special Thanks</span>
+        </a>
+      </li>
     </ul>
   </nav>
 </template>
