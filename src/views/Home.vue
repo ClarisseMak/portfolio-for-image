@@ -41,6 +41,9 @@
         <p>No projects yet. Stay tuned!</p>
       </div>
     </section>
+
+    <!-- Special Thanks Footer -->
+    <SpecialThanks />
   </div>
 </template>
 
@@ -49,6 +52,7 @@ import { ref, computed } from "vue";
 import AboutMe from "../components/AboutMe.vue";
 import ProjectCard from "../components/ProjectCard.vue";
 import SideNav from "../components/SideNav.vue";
+import SpecialThanks from "../components/SpecialThanks.vue";
 import profileData from "../assets/profile.json";
 import projectsData from "../assets/projects/example.json";
 
