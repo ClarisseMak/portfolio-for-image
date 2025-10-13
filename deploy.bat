@@ -52,7 +52,7 @@ echo.
 REM 5. 推送到 GitHub
 echo [5/5] 推送到 GitHub miaolizi 分支...
 git branch -M miaolizi
-git remote add origin https://github.com/ClarisseMak/portfolio-for-image.git
+git remote add origin git@github.com:ClarisseMak/portfolio-for-image.git
 git push -f origin miaolizi
 if %errorlevel% neq 0 (
     echo 推送失败！请检查：
