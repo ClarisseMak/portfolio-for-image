@@ -11,6 +11,10 @@
 - 📱 **响应式设计**：完美适配桌面和移动设备
 - 🎯 **简洁美观**：专注于作品本身
 
+## 🌐 在线演示
+
+查看示例页面：[https://portfolio-example.qbb.moe](https://portfolio-example.qbb.moe)
+
 ## 🚀 快速开始
 
 ```bash
@@ -27,10 +31,13 @@ pnpm build
 ## 📝 使用指南
 
 ### 1. 修改个人信息
+
 编辑 `src/assets/profile.json` 文件
 
 ### 2. 添加项目
+
 编辑 `src/assets/projects/example.json`，每个项目包含：
+
 - `category`: 分类（自动分组）
 - `title`: 项目标题
 - `titleImage`: 标题图（首页显示）
@@ -38,9 +45,11 @@ pnpm build
 - `main`: 详细内容数组（详情页显示）
 
 ### 3. 上传照片
+
 将照片放到 `public/images/` 目录
 
 **详细说明请查看：**
+
 - [使用说明.md](./使用说明.md) - 基础使用教程
 - [项目结构说明.md](./项目结构说明.md) - 完整技术文档
 
