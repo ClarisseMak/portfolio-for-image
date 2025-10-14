@@ -38,7 +38,7 @@
         </a>
       </div>
       <div class="footer-copyright">
-        <p>© 2025 Clarisse Mai. All rights reserved.</p>
+        <p>© 2025 Example. All rights reserved.</p>
       </div>
     </div>
   </footer>
